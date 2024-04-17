@@ -24,7 +24,7 @@
         <ul class="flex gap-5 justify-center">
           <li>
             <button
-              class="rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              class="rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
               data-ripple-light="true"
             >
               Newbie
@@ -32,7 +32,7 @@
           </li>
           <li>
             <button
-              class="rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              class="rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
               data-ripple-light="true"
             >
               Junior
@@ -40,7 +40,7 @@
           </li>
           <li>
             <button
-              class="rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              class="rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
               data-ripple-light="true"
             >
               Intermediate
@@ -48,7 +48,7 @@
           </li>
           <li>
             <button
-              class="rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              class="rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
               data-ripple-light="true"
             >
               Advanced
@@ -56,7 +56,7 @@
           </li>
           <li>
             <button
-              class="rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              class="rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
               data-ripple-light="true"
             >
               Guru
@@ -68,107 +68,125 @@
     <!-- FIM HEADER -->
 
     <!-- INICIO CARDS -->
-    <section class="mt-28">
+    <section class="p-20">
       <div
-        class="max-w-7xl w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5"
+        class="max-w-7xl w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10"
       >
-        <!-- INICIO CARD ITEM -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="./assets/images/desktop-design-11.jpg"
-            alt="3 Column Preview Card Component"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4 text-center sm:text-left">
-            <h2 class="text-xl font-bold text-slate-600">
-              3 Column Preview Card Component
-            </h2>
-            <p class="mt-2">
-              <span
-                class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
-                >HTML</span
-              >
-              <span
-                class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
-                >CSS</span
-              >
-            </p>
-            <div class="flex gap-4 justify-center">
+        <!-- INICIO CARD ITEM 1 -->
+        <div class="bg-white shadow-md rounded-lg h-full">
+          <div class="w-full relative mx-auto h-auto overflow-hidden rounded-lg">
+            <img
+              src="./assets/images/huddle-landing-page-with-a-single-introductory-section.jpg"
+              alt="Huddle landing page with a single introductory section"
+              class="rounded-lg w-full h-48 relative z-0 transition-all duration-300 hover:scale-110"
+            />
+          </div>
+          <div class="p-4 text-center sm:text-left grid gap-5">
+            <div>
+              <h2 class="text-xl font-bold text-slate-600 py-2">
+                Huddle landing page with a single introductory section
+              </h2>
+              <p>
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
+                  >HTML</span
+                >
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
+                  >CSS</span
+                >
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-x-2 gap-y-3">
               <a
-                href="https://romariojs94.github.io/3-column-preview-card-component"
-                class="flex justify-center mt-4 rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex-1"
+                href="/assets/projects/huddle-landing-page-with-a-single-introductory-section/index.html"
+                class="flex flex-1 rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
                 data-ripple-light="true"
+                target="_blank"
               >
                 Ver desafio
               </a>
               <a
-                href="https://romariojs94.github.io/3-column-preview-card-component"
-                class="flex justify-center mt-4 rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex-1"
+                href="#"
+                class="rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
                 data-ripple-light="true"
+                target="_blank"
               >
                 Ver código fonte
               </a>
+              <a
+                href="https://www.frontendmentor.io/solutions/huddle-landing-page-flexbox-vkEs2-2TG"
+                class="flex flex-1 rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+                data-ripple-light="true"
+                target="_blank"
+              >
+                frontendMentor
+              </a>
             </div>
-
-            <a
-              href="https://romariojs94.github.io/3-column-preview-card-component"
-              class="flex justify-center mt-4 rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex-1"
-              data-ripple-light="true"
-            >
-              frontendMentor
-            </a>
           </div>
         </div>
-        <!-- FIM CARD ITEM -->
+        <!-- FIM CARD ITEM 1 -->
 
-        <!-- INICIO CARD ITEM -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="./assets/images/desktop-design-11.jpg"
-            alt="3 Column Preview Card Component"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4 text-center sm:text-left">
-            <h2 class="text-xl font-bold text-slate-600">
-              3 Column Preview Card Component
-            </h2>
-            <p class="mt-2">
-              <span
-                class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
-                >HTML</span
-              >
-              <span
-                class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
-                >CSS</span
-              >
-            </p>
-            <div class="flex gap-4 justify-center">
+        <!-- INICIO CARD ITEM 2 -->
+        <div class="bg-white shadow-md rounded-lg h-full">
+          <div
+            class="w-full relative mx-auto h-auto overflow-hidden rounded-lg"
+          >
+            <img
+              src="./assets/images/ping-single-column-coming-soon-page.jpg"
+              alt="Ping single column coming soon page"
+              class="rounded-lg w-full h-48 relative z-0 transition-all duration-300 hover:scale-110"
+            />
+          </div>
+          <div class="p-4 text-center sm:text-left grid gap-5">
+            <div>
+              <h2 class="text-xl font-bold text-slate-600 py-2">
+                Ping single column coming soon page
+              </h2>
+              <p class="">
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
+                  >HTML</span
+                >
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
+                  >CSS</span
+                >
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
+                  >JS</span
+                >
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-x-2 gap-y-3">
               <a
-                href="https://romariojs94.github.io/3-column-preview-card-component"
-                class="flex justify-center mt-4 rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex-1"
+                href="/assets/projects/ping-single-column-coming-soon-page/index.html"
+                class="flex flex-1 rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
                 data-ripple-light="true"
+                target="_blank"
               >
                 Ver desafio
               </a>
               <a
-                href="https://romariojs94.github.io/3-column-preview-card-component"
-                class="flex justify-center mt-4 rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex-1"
+                href="#"
+                class="rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
                 data-ripple-light="true"
+                target="_blank"
               >
                 Ver código fonte
               </a>
+              <a
+                href="#"
+                class="flex flex-1 rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+                data-ripple-light="true"
+                target="_blank"
+              >
+                frontendMentor
+              </a>
             </div>
-
-            <a
-              href="https://romariojs94.github.io/3-column-preview-card-component"
-              class="flex justify-center mt-4 rounded-lg bg-[#6ABECD] py-2 px-4 text-sm font-bold uppercase text-white shadow-md #6ABECD/70 transition-all hover:shadow-lg hover:#6ABECD/15 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex-1"
-              data-ripple-light="true"
-            >
-              frontendMentor
-            </a>
           </div>
         </div>
-        <!-- FIM CARD ITEM -->
+        <!-- FIM CARD ITEM 2 -->
       </div>
     </section>
   </body>
