@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor Challenges</title>
     <link href="./styles/output.css" rel="stylesheet" />
   </head>
@@ -68,126 +75,270 @@
     <!-- FIM HEADER -->
 
     <!-- INICIO CARDS -->
-    <section class="p-20">
+    <section class="py-8 md:py-28 container mx-auto">
       <div
-        class="max-w-7xl w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10"
+        class="sm:max-w-7xl max-w-[85%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-10"
       >
         <!-- INICIO CARD ITEM 1 -->
-        <div class="bg-white shadow-md rounded-lg h-full">
-          <div class="w-full relative mx-auto h-auto overflow-hidden rounded-lg">
-            <img
-              src="./assets/images/huddle-landing-page-with-a-single-introductory-section.jpg"
-              alt="Huddle landing page with a single introductory section"
-              class="rounded-lg w-full h-48 relative z-0 transition-all duration-300 hover:scale-110"
-            />
-          </div>
-          <div class="p-4 text-center sm:text-left grid gap-5">
-            <div>
-              <h2 class="text-xl font-bold text-slate-600 py-2">
+        <div
+          class="bg-white shadow-md rounded-lg h-full flex flex-col justify-between"
+        >
+          <div>
+            <div
+              class="w-full relative mx-auto h-auto overflow-hidden rounded-t-lg"
+            >
+              <img
+                src="./assets/images/huddle-landing-page-with-a-single-introductory-section.jpg"
+                alt="Huddle landing page with a single introductory section"
+                class="rounded-t-lg w-full h-48 relative z-0 transition-all duration-300 hover:scale-110 object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-slate-600 mb-3">
                 Huddle landing page with a single introductory section
               </h2>
-              <p>
+              <div class="flex gap-2">
                 <span
-                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
-                  >HTML</span
-                >
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >HTML
+                </span>
                 <span
-                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
-                  >CSS</span
-                >
-              </p>
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >CSS
+                </span>
+              </div>
             </div>
-            <div class="flex flex-wrap gap-x-2 gap-y-3">
-              <a
-                href="/assets/projects/huddle-landing-page-with-a-single-introductory-section/index.html"
-                class="flex flex-1 rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
-                data-ripple-light="true"
-                target="_blank"
-              >
-                Ver desafio
-              </a>
-              <a
-                href="#"
-                class="rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
-                data-ripple-light="true"
-                target="_blank"
-              >
-                Ver código fonte
-              </a>
-              <a
-                href="https://www.frontendmentor.io/solutions/huddle-landing-page-flexbox-vkEs2-2TG"
-                class="flex flex-1 rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
-                data-ripple-light="true"
-                target="_blank"
-              >
-                frontendMentor
-              </a>
-            </div>
+          </div>
+          <div class="flex p-5 flex-wrap gap-x-2 gap-y-3">
+            <a
+              href="/assets/projects/huddle-landing-page-with-a-single-introductory-section/index.html"
+              class="flex flex-auto justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              Ver desafio
+            </a>
+            <a
+              href="https://github.com/romariojs94/fm-challenge/tree/main/assets/projects/huddle-landing-page-with-a-single-introductory-section"
+              class="flex flex-auto justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              Ver código fonte
+            </a>
+            <a
+              href="https://www.frontendmentor.io/solutions/huddle-landing-page-flexbox-vkEs2-2TG"
+              class="flex flex-auto md:flex-1 justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              frontendMentor
+            </a>
           </div>
         </div>
         <!-- FIM CARD ITEM 1 -->
 
         <!-- INICIO CARD ITEM 2 -->
-        <div class="bg-white shadow-md rounded-lg h-full">
-          <div
-            class="w-full relative mx-auto h-auto overflow-hidden rounded-lg"
-          >
-            <img
-              src="./assets/images/ping-single-column-coming-soon-page.jpg"
-              alt="Ping single column coming soon page"
-              class="rounded-lg w-full h-48 relative z-0 transition-all duration-300 hover:scale-110"
-            />
-          </div>
-          <div class="p-4 text-center sm:text-left grid gap-5">
-            <div>
-              <h2 class="text-xl font-bold text-slate-600 py-2">
+        <div
+          class="bg-white shadow-md rounded-lg h-full flex flex-col justify-between"
+        >
+          <div>
+            <div
+              class="w-full relative mx-auto h-auto overflow-hidden rounded-t-lg"
+            >
+              <img
+                src="./assets/images/ping-single-column-coming-soon-page.jpg"
+                alt="Ping single column coming soon page"
+                class="rounded-t-lg w-full h-48 relative z-0 transition-all duration-300 hover:scale-110 object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-slate-600 mb-3">
                 Ping single column coming soon page
               </h2>
-              <p class="">
+              <div class="flex gap-2">
                 <span
-                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
-                  >HTML</span
-                >
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >HTML
+                </span>
                 <span
-                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
-                  >CSS</span
-                >
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >CSS
+                </span>
                 <span
-                  class="bg-slate-100 py-1 px-4 rounded font-medium text-sm text-slate-600"
-                  >JS</span
-                >
-              </p>
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >JS
+                </span>
+              </div>
             </div>
-            <div class="flex flex-wrap gap-x-2 gap-y-3">
-              <a
-                href="/assets/projects/ping-single-column-coming-soon-page/index.html"
-                class="flex flex-1 rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
-                data-ripple-light="true"
-                target="_blank"
-              >
-                Ver desafio
-              </a>
-              <a
-                href="#"
-                class="rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
-                data-ripple-light="true"
-                target="_blank"
-              >
-                Ver código fonte
-              </a>
-              <a
-                href="#"
-                class="flex flex-1 rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
-                data-ripple-light="true"
-                target="_blank"
-              >
-                frontendMentor
-              </a>
-            </div>
+          </div>
+          <div class="flex p-5 flex-wrap gap-x-2 gap-y-3">
+            <a
+              href="/assets/projects/ping-single-column-coming-soon-page/index.html"
+              class="flex flex-auto rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              Ver desafio
+            </a>
+            <a
+              href="https://github.com/romariojs94/fm-challenge/tree/main/assets/projects/ping-single-column-coming-soon-page"
+              class="flex flex-auto ustify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              Ver código fonte
+            </a>
+            <a
+              href="https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-css-EB-nP2ZEqj"
+              class="flex flex-auto md:flex-1 justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              frontendMentor
+            </a>
           </div>
         </div>
         <!-- FIM CARD ITEM 2 -->
+
+        <!-- INICIO CARD ITEM 3 -->
+        <div
+          class="bg-white shadow-md rounded-lg h-full flex flex-col justify-between"
+        >
+          <div>
+            <div
+              class="w-full relative mx-auto h-auto overflow-hidden rounded-t-lg"
+            >
+              <img
+                src="./assets/images/single-price-grid-component.jpeg"
+                alt="Single price grid component"
+                class="rounded-t-lg w-full h-48 relative z-0 transition-all duration-300 hover:scale-110 object-cover object-center"
+              />
+            </div>
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-slate-600 mb-3">
+                Single price grid component
+              </h2>
+              <div class="flex gap-2">
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >HTML</span
+                >
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >CSS</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex p-5 flex-wrap gap-x-2 gap-y-3">
+            <a
+              href="/assets/projects/single-price-grid-component/index.html"
+              class="flex flex-auto justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              Ver desafio
+            </a>
+            <a
+              href=""
+              class="flex flex-auto justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              Ver código fonte
+            </a>
+            <a
+              href="#"
+              class="flex flex-auto md:flex-1 justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              frontendMentor
+            </a>
+          </div>
+        </div>
+        <!-- FIM CARD ITEM 3 -->
+
+        <!-- INICIO CARD ITEM 4 -->
+        <div
+          class="bg-white shadow-md rounded-lg h-full flex flex-col justify-between"
+        >
+          <div>
+            <div
+              class="w-full relative mx-auto h-auto overflow-hidden rounded-t-lg"
+            >
+              <img
+                src="./assets/images/intro-component-with-signup-form.jpg"
+                alt="Intro component with sign-up form"
+                class="rounded-t-lg w-full h-48 relative z-0 transition-all duration-300 hover:scale-110 object-cover object-center"
+              />
+            </div>
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-slate-600 mb-3">
+                Intro component with sign-up form
+              </h2>
+              <div class="flex gap-2">
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >HTML</span
+                >
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >CSS</span
+                >
+                <span
+                  class="bg-slate-100 py-1 px-4 rounded font-normal text-sm text-slate-600"
+                  >JS</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex p-5 flex-wrap gap-x-2 gap-y-3">
+            <a
+              href="/assets/projects/intro-component-with-signup-form/index.html"
+              class="flex flex-auto justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              Ver desafio
+            </a>
+            <a
+              href=""
+              class="flex flex-auto justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              Ver código fonte
+            </a>
+            <a
+              href="#"
+              class="flex flex-auto md:flex-1 justify-center rounded-lg bg-[var(--color-primary)] py-2 px-4 text-sm font-bold uppercase text-white transition-all shadow-lg hover:bg-[var(--color-secondary)]"
+              data-ripple-light="true"
+              target="_blank"
+            >
+              frontendMentor
+            </a>
+          </div>
+        </div>
+        <!-- FIM CARD ITEM 4 -->
       </div>
     </section>
+
+    <footer
+      class="py-2 bg-slate-600 text-white flex items-center justify-center"
+    >
+      <p class="font-normal text-sm">
+        <span>Criado com ❤️ por</span
+        ><a
+          class="p-2 hover:text-[var(--color-secondary)] transition-all text-sans font-semibold footer-link"
+          href="https://romariojs94.vercel.app/"
+          target="_blank"
+          >Romário</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
