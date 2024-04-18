@@ -1,143 +1,169 @@
-html, body, p, h1, h2, h3, h4, h5 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* font-family: 'Karla', sans-serif; */
 
 :root {
-    --Cyan-color: hsl(179, 62%, 43%);
-    --Bright-Yellow: hsl(71, 73%, 54%);
-    --Light-Gray: hsl(204, 43%, 93%);
-    --Grayish-Blue: hsl(218, 22%, 67%);
+  --Cyan-color: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Bright-Yellow-2: hsl(71, 64%, 41%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+
+  font-size: 1rem;
 }
 
 body {
-    background-color: var(--Light-Gray);
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
+  background-color: var(--Light-Gray);
+  font-family: "Karla", sans-serif;
 }
 
 .main {
-    display: grid;
-    place-items: center;
-    height: 100vh;
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
 .card {
-    display: grid;
-    margin: 0 auto;
-    max-width: 635px;
-    grid-template-areas: 'MinhaArea MinhaArea';
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  margin: 0 auto;
+  max-width: 635px;
+  grid-template-areas: "MinhaArea MinhaArea";
+  grid-template-columns: 1fr 1fr;
 }
 
-
 .card-header {
-    background-color: #FFF;
-    grid-area: MinhaArea;
-    padding: 45px 40px 40px 40px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  background-color: #fff;
+  grid-area: MinhaArea;
+  padding: 45px 40px 40px 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card-header h1 {
-    font-size: 24px;
-    line-height: 1;
-    font-weight: 700;
-    color: var(--Cyan-color);
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--Cyan-color);
 }
 
 .card-header h2 {
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 700;
-    color: var(--Bright-Yellow);
-    margin-top: 20px;
-    margin-bottom: 10px;
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--Bright-Yellow);
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .card-header p {
-    font-size: 16px;
-    line-height: 27px;
-    font-weight: 400;
-    color: var(--Grayish-Blue);
+  font-size: 1rem;
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
 }
 
 .card-left {
-    background-color: var(--Cyan-color);
-    padding: 45px 40px 40px 40px;
-    border-bottom-left-radius: 5px;
+  background-color: var(--Cyan-color);
+  padding: 45px 40px 40px 40px;
+  border-bottom-left-radius: 5px;
 }
 
 .card-left h2 {
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 700;
-    color: var(--Light-Gray);
-    margin-bottom: 15px;
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--Light-Gray);
+  margin-bottom: 15px;
 }
 
 .card-left h3 span {
-    font-size: 36px;
-    line-height: 1;
-    font-weight: 700;
-    color: var(--Light-Gray);
-    vertical-align: middle;
-    margin-right: 15px;
+  font-size: 2.25rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--Light-Gray);
+  vertical-align: middle;
+  margin-right: 15px;
 }
 
 .card-left h3 {
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 400;
-    color: var(--Light-Gray);
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--Light-Gray);
 }
 
 .card-left p {
-    font-size: 16px;
-    line-height: 1;
-    font-weight: 400;
-    color: var(--Light-Gray);
-    margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--Light-Gray);
+  margin-top: 10px;
 }
 
-.card-left .button {
-    margin-top: 30px;
-    border-radius: 5px;
-    background: var(--Bright-Yellow);
-    display: flex;
-    height: 48px;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    line-height: 1;
-    color: var(--Light-Gray);
-    box-shadow: 0px 10px 20px 5px #25A39F;
+.card-left .link {
+  margin-top: 30px;
+  border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    hsla(71, 73%, 54%, 1) 20%,
+    hsla(71, 72%, 31%, 1) 100%
+  );
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  line-height: 1;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0px 10px 20px 5px #25a39f;
 }
 
 .card-right {
-    background-color: #4ABEBD;
-    padding: 45px 40px 40px 40px;
-    border-bottom-right-radius: 5px;
+  background-color: #4abebd;
+  padding: 45px 40px 40px 40px;
+  border-bottom-right-radius: 5px;
 }
 
 .card-right h2 {
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 700;
-    color: var(--Light-Gray);
-    margin-bottom: 15px;
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--Light-Gray);
+  margin-bottom: 15px;
 }
 
 .card-right p {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 400;
-    color: var(--Light-Gray);
+  font-size: 1rem;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--Light-Gray);
+}
+
+@media (max-width: 650px) {
+  .main {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .card {
+    grid-template-columns: auto;
+    grid-template-areas: "MinhaArea";
+  }
+  .card-left {
+    border-bottom-left-radius: 0px;
+  }
+  .card-right {
+    border-bottom-left-radius: 5px;
+  }
 }
