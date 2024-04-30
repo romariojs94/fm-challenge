@@ -1,11 +1,20 @@
 /*  geral */
 
-body, h1, h2, h3, p, ul, li, blockquote {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+blockquote {
   margin: 0;
   padding: 0;
 }
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
 img {
   display: block;
@@ -15,20 +24,20 @@ img {
 body {
   box-sizing: border-box;
   font-size: 15px;
-  font-family: 'Spartan', sans-serif;
-  background-image: url('/images/bg-pattern-top-desktop.svg');
+  font-family: "Spartan", sans-serif;
+  background-image: url("../images/bg-pattern-top-desktop.svg");
   background-repeat: no-repeat;
   margin-top: 120px;
 }
 
 :root {
---Very-Dark-Magenta: hsl(300, 43%, 22%);
---Soft-Pink: hsl(333, 80%, 67%);
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: #ffb3d5;
 
-/* neutral */
---Dark-Grayish-Magenta: hsl(303, 10%, 53%);
---Light-Grayis-Magenta: hsl(300, 24%, 96%);
---White: hsl(0, 0%, 100%);
+  /* neutral */
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayis-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
 }
 
 /* container */
@@ -87,12 +96,14 @@ body {
 .views ul li:last-child {
   margin-left: 30px;
   font-size: 15px;
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
   color: var(--Very-Dark-Magenta);
   font-weight: 700;
 }
 
-.flex2 { display: flex; }
+.flex2 {
+  display: flex;
+}
 
 .card-item {
   background-color: var(--Very-Dark-Magenta);
@@ -120,8 +131,10 @@ body {
   border-radius: 50%;
 }
 
-.description-profile { margin-top: 10px; }
-  
+.description-profile {
+  margin-top: 10px;
+}
+
 .description-profile h2 {
   font-size: 16px;
   font-weight: 700;
@@ -130,10 +143,10 @@ body {
 }
 
 .description-profile span {
- color: var(--Soft-Pink);
- line-height: 18px;
- font-size: 12px;
- font-weight: 700;
+  color: var(--Soft-Pink);
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .quote {
@@ -143,7 +156,9 @@ body {
   color: var(--Light-Grayis-Magenta);
 }
 
-.card-item:last-child {  margin-right: 0; }
+.card-item:last-child {
+  margin-right: 0;
+}
 
 #top50 {
   position: relative;
@@ -159,18 +174,8 @@ body {
   justify-self: center;
   justify-content: center;
   justify-self: center;
-
   align-self: center;
   align-items: center;
   align-content: center;
-  
   vertical-align: bottom;
 }
-
-.attribution {
-  margin: 120px 0 60px 0;
-  font-size: 14px;
-  text-align: center;
-}
-
-.attribution a { color: hsl(228, 45%, 44%); }

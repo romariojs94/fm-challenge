@@ -18,42 +18,46 @@
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
-  <body>
-    <section>
-      <img class="logo" src="./images/logo.svg" alt="logo" />
-      <div class="image-mobile"></div>
-      <div class="meio">
-        <h1 class="heading"><span class="we-re">We're</span> coming soon</h1>
-        <p class="base-text">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-      </div>
-      <form action="" id="form" class="form">
-        <div class="form-group">
-          <input
-            required
-            type="email"
-            name="form-input"
-            id="form-input"
-            class="form-input"
-            placeholder="Email Address"
-          />
-
-          <p class="error"></p>
-          <p class="valid-mail"></p>
-          <button
-            type="submit"
-            name="submit"
-            class="form__btn"
-            aria-label="E-mail address form submission button"
-          >
-            <img src="./images/icon-arrow.svg" alt="#" aria-hidden="true" />
-          </button>
+  <body class="card">
+    <div>
+      <header class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </header>
+      <section>
+        <div class="image-mobile"></div>
+        <div class="meio">
+          <h1 class="heading"><span class="we-re">We're</span> coming soon</h1>
+          <p class="base-text">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
         </div>
-      </form>
-    </section>
+        <form action="" id="form" class="form">
+          <div class="form-group">
+            <input
+              required
+              type="email"
+              name="form-input"
+              id="form-input"
+              class="form-input"
+              placeholder="Email Address"
+            />
+
+            <p class="error"></p>
+            <p class="valid-mail"></p>
+            <button
+              type="submit"
+              name="submit"
+              class="form__btn"
+              aria-label="E-mail address form submission button"
+            >
+              <img src="./images/icon-arrow.svg" alt="#" aria-hidden="true" />
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
     <div class="hero"></div>
     <script src="script.js"></script>
   </body>

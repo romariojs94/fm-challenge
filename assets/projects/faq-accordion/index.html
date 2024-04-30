@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="./styles/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | FAQ accordion</title>
+  </head>
+  <body class="bg-light-pink text-[1rem] min-h-screen w-full pb-20">
+    <div
+      class="bg-hero-pattern-mobile sm:bg-hero-pattern bg-no-repeat bg-cover bg-center text-white h-[400px] w-full"
+    ></div>
+    <section
+      id="faq"
+      class="container p-10 rounded-2xl -mt-36 max-w-[90%] sm:max-w-[650px] mx-auto bg-white-color max-h-max shadow-slate-300"
+    >
+      <div class="flex items-center gap-4 my-3">
+        <img src="./assets/images/icon-star.svg" alt="" />
+        <h1 class="text-5xl font-[700] text-dark-purple uppercase">Faqs</h1>
+      </div>
+      <!-- faq accordion item inicio -->
+      <dl class="my-2 faq-lista js-accordion">
+        <dt
+          class="text-base pt-5 font-[700] text-dark-purple hover:text-[#7E00D9] flex items-center justify-between gap-2 cursor-pointer"
+        >
+          What is Frontend Mentor, and how will it help me?
+        </dt>
+        <dd class="text-base py-3 font-[500] text-[#000]/40 hidden">
+          Frontend Mentor offers realistic coding challenges to help developers
+          improve their frontend coding skills with projects in HTML, CSS, and
+          JavaScript. It's suitable for all levels and ideal for portfolio
+          building.
+        </dd>
+      </dl>
+      <!-- faq accordion item fim -->
+
+      <!-- faq accordion item inicio -->
+      <dl class="my-2 faq-lista js-accordion">
+        <dt
+          class="text-base pt-5 font-[700] text-dark-purple hover:text-[#7E00D9] flex items-center justify-between gap-2 cursor-pointer"
+        >
+          Is Frontend Mentor free?
+        </dt>
+        <dd class="text-base py-3 font-[500] text-[#000]/40 hidden">
+          Yes, Frontend Mentor offers both free and premium coding challenges,
+          with the free option providing access to a range of projects suitable
+          for all skill levels.
+        </dd>
+      </dl>
+      <!-- faq accordion item fim -->
+
+      <!-- faq accordion item inicio -->
+      <dl class="my-2 faq-lista js-accordion">
+        <dt
+          class="text-base pt-5 font-[700] text-dark-purple hover:text-[#7E00D9] flex items-center justify-between gap-2 cursor-pointer"
+        >
+          Can I use Frontend Mentor projects in my portfolio?
+        </dt>
+        <dd class="text-base py-3 font-[500] text-[#000]/40 hidden">
+          Yes, you can use projects completed on Frontend Mentor in your
+          portfolio. It's an excellent way to showcase your skills to potential
+          employers!
+        </dd>
+      </dl>
+
+      <!-- faq accordion item fim -->
+
+      <!-- faq accordion item inicio -->
+      <dl class="my-2 faq-lista js-accordion">
+        <dt
+          class="text-base pt-5 font-[700] text-dark-purple hover:text-[#7E00D9] flex items-center justify-between gap-2 cursor-pointer"
+        >
+          How can I get help if I'm stuck on a Frontend Mentor challenge?
+        </dt>
+        <dd class="text-base py-3 font-[500] text-[#000]/40 hidden">
+          The best place to get help is inside Frontend Mentor's Discord
+          community. There's a help channel where you can ask questions and seek
+          support from other community members.
+        </dd>
+      </dl>
+      <!-- faq accordion item fim -->
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

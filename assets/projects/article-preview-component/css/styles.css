@@ -72,7 +72,7 @@ li {
 .article__text {
   font-weight: 500;
   margin: 1.5rem 0 2.3rem;
-  color: #6d7f97;
+  color: #495769;
 }
 
 .article__bottom {
@@ -110,7 +110,7 @@ li {
 }
 
 .article .author__published {
-  color: #9eafc2;
+  color: #627181;
 }
 
 .article .share {

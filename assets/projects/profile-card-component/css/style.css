@@ -101,7 +101,3 @@ main {
 }
 
 .info-item span { color: var(--Dark-gray);}
-
-.attribution p, a { font-size: 16px; text-align: center; color: #FFFFFF; }
-.attribution a { text-decoration: underline; }
-.attribution a:hover{ color: var(--Very-dark-desaturated-blue); }

@@ -1,14 +1,14 @@
 @media (max-width: 769px) {
     .main {
-        max-width: 275px;
+        max-width: 85%;
         margin: 0 auto;
         text-align: center;  
         margin-top: 70px;
     }
    
-    .main h1 { font-size: 21px; }
+    .main h1 { font-size: 2rem; }
 
-    .main h2 { font-size: 22px; }
+    .main h2 { font-size: 2rem; }
 
     .subtitle { font-size: 14px; max-width: 300px; margin-bottom: 70px;}
     
@@ -41,4 +41,10 @@
     }
 
     .card-item { margin-bottom: 30px; }
+}
+
+@media (max-width: 480px) {
+    .main h1 { font-size: 1.25rem; }
+
+    .main h2 { font-size: 1.25rem; }
 }

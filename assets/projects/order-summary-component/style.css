@@ -24,7 +24,7 @@ a {
   /* Secondary color */
 
   --very-pale-blue: hsl(225, 100%, 98%);
-  --desaturated-blue: hsl(224, 23%, 55%);
+  --desaturated-blue: hsl(223, 29%, 34%);
   --darkblue-color: hsl(223, 47%, 23%);
 }
 
@@ -71,7 +71,7 @@ body {
 
 .text p {
   text-align: center;
-  color: #7280a7;
+  color: #5e6c92;
   font-weight: 500;
   font-size: 16px;
   line-height: 23px;
@@ -183,22 +183,13 @@ body {
   color: var(--darkblue-color);
 }
 
-.footer span a {
-  color: var(--bright-blue);
-}
-
-.footer span a:hover {
-  color: var(--desaturated-blue);
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .card {
     width: 90vw;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .card {
     width: 90vw;
   }

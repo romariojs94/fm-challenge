@@ -8,15 +8,11 @@ img {
   max-width: 100%;
   display: block;
 }
-.logo {
-  margin-bottom: 80px;
-}
-body {
+
+.card {
   display: grid;
   gap: 80px;
   min-height: 100vh;
-  justify-content: center;
-  align-items: center;
   grid-template-columns: 3fr 2fr;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
@@ -28,7 +24,11 @@ body {
     "meio columnThree"
     "form columnThree";
 }
-
+.logo {
+  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-left: 170px;
+}
 section {
   padding: 40px 100px 0 170px;
 }
@@ -63,7 +63,7 @@ section {
   color: hsl(0, 36%, 70%);
   max-width: 45ch;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   margin: 20px 0 30px 0;
 }
@@ -119,8 +119,39 @@ section {
 .error {
   margin: 10px 0;
 }
+
+@media (max-width: 980px) {
+  .card {
+    gap: initial;
+    grid-template-columns: 1fr;
+    background-size: 100vw, 100%;
+    grid-template-areas:
+      ". columnThree"
+      ". columnThree"
+      ". columnThree";
+  }
+  .hero {
+    display: none;
+  }	
+  section {
+    padding: 40px 80px 0 80px;
+  }
+  .meio {
+    padding: 30px;
+    text-align: center;
+  }
+  .base-text {
+    margin: 20px auto 30px auto;
+  }
+  .form-group {
+    padding: 30px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 @media (max-width: 350px) {
-  body {
+  .card {
     gap: initial;
     grid-template-columns: 1fr;
     background-image: url("./images/bg-pattern-desktop.svg");
@@ -142,9 +173,10 @@ section {
     max-width: 100%;
   }
   section {
-    padding: inherit;
+    padding: inherit !important;
   }
   .logo {
+    padding-top: 40px;
     padding-left: 40px;
     margin-bottom: 40px;
   }
@@ -166,9 +198,8 @@ section {
   }
 
   .form-group {
-    padding: 30px;
+    padding: 20px;
     max-width: 100%;
-    position: initial;
   }
 
   .form-input {
@@ -180,33 +211,5 @@ section {
     padding: 1rem 1.4rem;
     position: absolute;
     right: 8px;
-  }
-}
-
-@media (max-width: 980px) {
-  body {
-    gap: initial;
-    grid-template-columns: 1fr;
-    background-size: 100vw, 100%;
-    grid-template-areas:
-      ". columnThree"
-      ". columnThree"
-      ". columnThree";
-  }
-  .hero {
-    display: none;
-  }	
-  .meio {
-    padding: 30px;
-    text-align: center;
-  }
-  .base-text {
-    margin: 20px auto 30px auto;
-  }
-  .form-group {
-    padding: 30px;
-    max-width: 85%;
-    margin-right: auto;
-    margin-left: auto;
   }
 }

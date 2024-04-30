@@ -92,16 +92,3 @@ body {
     left:0;
     background: linear-gradient(0deg, rgba(96, 4, 153, 0.72), rgba(96, 4, 153, 0.72));
 }
-
-.footer {
-    color: hsl(0, 0%, 100%);
-    text-align: center;
-    font-size: 1rem;
-    line-height: 21px;
-}
-
-.footer a {
-    color: hsl(277, 64%, 61%);
-}
-
-.footer a:hover { color:rgba(255, 255, 255, 0.7)}

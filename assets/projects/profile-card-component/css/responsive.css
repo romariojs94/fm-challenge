@@ -8,13 +8,6 @@
 
     .card { width: 100%; }
 
-    .attribution {
-        text-align: center;
-        max-width: 350px;
-        margin: 0 auto;
-        line-height: 21px;
-    }
-
 }
 
 @media (min-width: 428px) and (max-width: 1961px)  {
@@ -42,8 +35,3 @@
         background-size: cover;
     }
 }
-
-
-
-
-
