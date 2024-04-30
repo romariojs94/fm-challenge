@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/assets/images/background-pattern-desktop.svg')",
-        "hero-pattern-mobile": "url('/assets/images/background-pattern-mobile.svg')",
+        "hero-pattern": "url('../assets/images/background-pattern-desktop.svg')",
+        "hero-pattern-mobile": "url('../assets/images/background-pattern-mobile.svg')",
       },
       backgroundColor: {
         "light-pink": "hsl(275, 100%, 97%)",
