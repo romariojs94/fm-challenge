@@ -1,0 +1,134 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+@font-face {
+	font-family: 'SemiBoldFigtree';
+	src: url('./assets/fonts/static/Figtree-SemiBold.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'ExtraBoldFigtree';
+	src: url('./assets/fonts/static/Figtree-ExtraBold.ttf');
+	font-weight: 800;
+}
+
+:root {
+	--Yellow: hsl(47, 88%, 63%);
+	--White: hsl(0, 0%, 100%);
+	--Grey: hsl(0, 0%, 50%);
+	--Black: hsl(0, 0%, 7%);
+}
+
+body {
+	width: 100%;
+	font-family: 'SemiBoldFigtree', sans-serif;
+	min-height: 100vh;
+	background-color: var(--Yellow);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+}
+
+
+.text-m {
+	font-family: "SemiBoldFigtree", sans-serif;
+	font-weight: 500;
+}
+.text-b {
+	font-family: "ExtraBoldFigtree", sans-serif;
+	font-weight: 800;
+}
+
+.card {
+	border: 1px solid var(--Black);
+	border-radius: 20px;
+	max-width: 384px;
+	width: 100%;
+	background-color: var(--White);
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	box-shadow: 8px 8px 0px 0px #000000;
+}
+.header .tag {
+	display: inline-block;
+	padding: 4px 16px;
+	border-radius: 4px;
+	background-color: var(--Yellow);
+	color: var(--Black);
+
+	font-size: 14px;
+	line-height: 150%;
+
+	margin-bottom: 12px;
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.info span {
+	font-size: 14px;
+	line-height: 150%;
+	color: var(--Black);
+}
+.info h1 {
+	font-size: 24px;
+	line-height: 150%;
+	color: var(--Black);
+}
+.info p {
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--Grey);
+}
+.rodape {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.rodape img {
+	width: 32px;
+	height: 32px;
+}
+.rodape span {
+	color: var(--Black);
+	font-size: 14px;
+	line-height: 150%;
+}
+
+/* estados */
+
+.card:hover {
+	cursor: pointer;
+	box-shadow: 16px 16px 0px 0px #000000;
+	transition: all 0.3s;
+}
+.info h1:hover {
+	color: var(--Yellow);
+	cursor: pointer;
+}
+/* media */
+
+@media (max-width: 380px) {
+	body {
+		padding: 24px;
+	}
+	.card {
+		max-width: 100%;
+	}
+}
